@@ -20,8 +20,8 @@ This web project is made with [Symfony 3.3][1] and [PHP 7][2].
  3. Check permissions for your **var/cache**, **var/logs** and **var/sessions** folders :
 
     ```
-    sudo setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX app/cache app/logs
-    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs    
+    sudo setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX var/cache var/logs var/sessions
+    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx var/cache var/logs var/sessions
     ```
  4. Create the database :
 
