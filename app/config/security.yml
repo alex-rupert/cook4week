@@ -17,7 +17,9 @@ security:
                 provider: fos_userbundle
                 check_path: fos_user_security_check
                 csrf_token_generator: security.csrf.token_manager # Use form.csrf_provider instead for Symfony <2.4
-            logout:       true
+            logout:
+                path: fos_user_security_logout
+                target: app_homepage
             anonymous:    true
 
     access_control:

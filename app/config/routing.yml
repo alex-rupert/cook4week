@@ -1,14 +1,14 @@
 admin:
     resource: "@AdminBundle/Resources/config/routing.yml"
-    prefix:   /
-
-user:
-    resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /admin
     
 app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /user
     
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
