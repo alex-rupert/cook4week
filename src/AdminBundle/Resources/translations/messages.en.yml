@@ -1,0 +1,10 @@
+company:
+    name: Cook4Week
+    
+entity:
+    label:
+        fridge: ]-Inf,1] Frigo | [2,Inf] Frigo
+        
+crud:
+    form:
+        new: New

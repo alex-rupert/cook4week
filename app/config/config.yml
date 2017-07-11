@@ -9,6 +9,7 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
+    allowedLanguages: fr|en
 
 framework:
     #esi: ~
@@ -77,3 +78,14 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "%mailer_user%"
+        
+assetic:
+    debug: '%kernel.debug%'
+    use_controller: false
+    filters:
+        cssrewrite: ~
+        scssphp:
+            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+        jsqueeze:
+            single_line: true
+            keep_important_comments: false
