@@ -15,6 +15,7 @@ security:
             pattern: ^/
             form_login:
                 provider: fos_userbundle
+                login_path: fos_user_registration_register
                 check_path: fos_user_security_check
                 csrf_token_generator: security.csrf.token_manager # Use form.csrf_provider instead for Symfony <2.4
             logout:
