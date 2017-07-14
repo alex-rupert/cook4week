@@ -1,0 +1,24 @@
+#fridge_index:
+#    path:     /
+#    defaults: { _controller: "AdminBundle:Fridge:index" }
+#    methods:  GET
+
+fridge_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminBundle:Fridge:show" }
+    methods:  GET
+
+fridge_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Fridge:new" }
+    methods:  [GET, POST]
+
+fridge_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminBundle:Fridge:edit" }
+    methods:  [GET, POST]
+
+fridge_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminBundle:Fridge:delete" }
+    methods:  DELETE

@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Fridges list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for fridge in fridges %}
+            <tr>
+                <td><a href="{{ path('fridge_show', { 'id': fridge.id }) }}">{{ fridge.id }}</a></td>
+                <td>{{ fridge.name }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('fridge_show', { 'id': fridge.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('fridge_edit', { 'id': fridge.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('fridge_new') }}">Create a new fridge</a>
+        </li>
+    </ul>
+{% endblock %}

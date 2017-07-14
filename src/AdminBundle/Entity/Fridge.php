@@ -33,6 +33,7 @@ class Fridge
     
     /**
      * @Assert\Valid()
+     * @Assert\NotNull()
      * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User", inversedBy="fridges")
      */
     private $user;

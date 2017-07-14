@@ -8,3 +8,13 @@ entity:
 crud:
     form:
         new: Ajout
+        create: Créer
+    message:
+        success:
+            create: La création a été faite avec succès
+    definition:
+        new:
+            fridge: Le frigo contient vos aliments. Vous pouvez créer plusieurs frigos si vous avez besoin de compartimenter vos aliments !
+            
+#Form labels
+Name: Nom

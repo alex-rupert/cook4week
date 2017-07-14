@@ -1,0 +1,8 @@
+{{ form_start(form) }}
+    <div class="hidden">
+        {{ form_row(form.user) }} 
+    </div>
+    {{ form_row(form.name) }}
+    
+    {{ include('AdminBundle:Crud/Button:create.html.twig') }}
+{{ form_end(form) }}

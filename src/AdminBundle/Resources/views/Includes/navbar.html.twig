@@ -17,18 +17,15 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         {{ 'entity.label.fridge'|transchoice(-1) }} <span class="caret"></span>
-                        {{ app.user }}
                     </a>
                     <ul class="dropdown-menu">
-                        {#
                         {% for fridge in app.user.fridges %}
-                            <li><a href="#">{{ fridges.name }}</a></li>
+                            <li><a href="#">{{ fridge.name }}</a></li>
                             {% if loop.last %}    
                                 <li role="separator" class="divider"></li>
                             {% endif %}
                         {% endfor %}
-                        <li><a href="#">{{ 'crud.form.new'|trans }} : {{ 'entity.label.fridge'|transchoice(1) }}</a></li>
-                        #}
+                        <li><a href="{{ path('fridge_new') }}">{{ 'crud.form.new'|trans }} : {{ 'entity.label.fridge'|transchoice(1) }}</a></li>
                     </ul>
                 </li>
                 <li class="page-scroll">

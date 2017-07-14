@@ -8,3 +8,13 @@ entity:
 crud:
     form:
         new: New
+        Create: Créer
+    message:
+        success:
+            create: The creation is successful
+    definition:
+        new:
+            fridge: The fridge contains you aliments. You can create several fridges if you need to compartmentalize your aliments !
+            
+#Form labels
+Name: Name
