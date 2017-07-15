@@ -54,7 +54,6 @@ class FridgeController extends Controller
         return $this->render('AdminBundle:Crud:new.html.twig', array(
             'entity' => $fridge,
             'form' => $form->createView(),
-            'entityLabel' => 'entity.label.fridge',
             'crudDefinition' => 'crud.definition.new.fridge',
         ));
     }

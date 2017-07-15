@@ -1,0 +1,11 @@
+{{ form_start(edit_form) }}
+   {{ form_widget(edit_form) }} 
+   {{ include('AdminBundle:Crud/Button:edit.html.twig') }}
+{{ form_end(edit_form) }}
+
+<div class="pull-right">
+    {{ include('AdminBundle:Crud/Button:delete.html.twig') }}
+</div>
+
+{{ include('AdminBundle:Crud/Form:deleteModal.html.twig') }}
+

@@ -4,17 +4,27 @@ company:
 entity:
     label:
         fridge: ]-Inf,1] Frigo | [2,Inf] Frigo
+        product: ]-Inf,1] Aliment | [2,Inf] Aliments
         
 crud:
     form:
-        new: Ajout
         create: Créer
+        delete: Supprimer
+        edit: Éditer
+        list: Liste
     message:
         success:
             create: La création a été faite avec succès
+            edit: La modification a été faite avec succès
     definition:
         new:
             fridge: Le frigo contient vos aliments. Vous pouvez créer plusieurs frigos si vous avez besoin de compartimenter vos aliments !
             
 #Form labels
+Description: Description
 Name: Nom
+Price: Prix
+
+#Other
+No: Non
+Yes: Oui

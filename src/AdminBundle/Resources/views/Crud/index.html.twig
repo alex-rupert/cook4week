@@ -8,17 +8,22 @@
             <div class="col-lg-12">
                 <img class="img-responsive" src="img/profile.png" alt="">
                 <div class="intro-text">
-                    <h1 class="name">{{ 'crud.form.create'|trans }} : {{ ('entity.label.'~getClassName(entity)|lower)|transchoice(1) }}</h1>
+                    <h1 class="name">{{ 'crud.form.list'|trans }} : {{ ('entity.label.'~classLabel)|transchoice(2) }}</h1>
                     <hr class="star-light">                    
                     {% if crudDefinition is defined %}
                         <span class="skills">{{ crudDefinition|trans }}</span>
                         <hr class="star-light">
                     {% endif %}
-                    {% if getClassName(entity) in ['Fridge'] %}
-                        {{ include('AdminBundle:Crud/Form:new'~getClassName(entity)~'.html.twig') }}
-                    {% else %}
-                        {{ include('AdminBundle:Crud/Form:newDefault.html.twig') }}
-                    {% endif %}
+                    
+                    <div class="color-black">
+                        {{ datatable({
+                                'edit_route' : classLabel~'_edit',
+                                'js' : {
+                                    'sAjaxSource' : path(classLabel~'_datatable')
+                                }
+                            })
+                        }}
+                    </div>
                 </div>
             </div>
         </div>

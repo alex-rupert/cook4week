@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             //Divers
             new FOS\UserBundle\FOSUserBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new Ali\DatatableBundle\AliDatatableBundle(),
             
             //Project bundles
             new AppBundle\AppBundle(),

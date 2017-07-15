@@ -1,0 +1,20 @@
+<!-- Modal -->
+<div class="modal fade color-black" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">{{ 'crud.form.delete'|trans }} ?</h4>
+            </div>
+            <div class="modal-body">
+                <button type="button" class="btn btn-success pull-left" data-dismiss="modal">{{ 'No'|trans }}</button>
+                <div class="pull-right">
+                    {{ form_start(delete_form) }}
+                       {{ form_widget(delete_form) }} 
+                       <button type="submit" class="btn btn-danger">{{ 'Yes'|trans }}</button>
+                    {{ form_end(delete_form) }}
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>

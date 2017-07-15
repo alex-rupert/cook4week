@@ -1,7 +1,11 @@
-admin_fridge:
-    resource: "@AdminBundle/Resources/config/routing/fridge.yml"
-    prefix:   /fridge
-
 admin_homepage:
     path:     /
     defaults: { _controller: AdminBundle:Default:index }
+
+admin_fridge:
+    resource: "@AdminBundle/Resources/config/routing/fridge.yml"
+    prefix:   /fridge
+        
+admin_product:
+    resource: "@AdminBundle/Resources/config/routing/product.yml"
+    prefix:   /admin/product

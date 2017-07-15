@@ -90,3 +90,7 @@ assetic:
         jsqueeze:
             single_line: true
             keep_important_comments: false
+            
+ali_datatable:  
+    all:    ~
+    js:     ~

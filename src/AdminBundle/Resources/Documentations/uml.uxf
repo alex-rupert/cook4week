@@ -19,7 +19,7 @@ description: text</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>210</x>
-      <y>280</y>
+      <y>260</y>
       <w>210</w>
       <h>60</h>
     </coordinates>
@@ -46,31 +46,34 @@ name: string(50) required</panel_attributes>
       <x>300</x>
       <y>190</y>
       <w>50</w>
-      <h>110</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=0..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>210</x>
-      <y>400</y>
+      <y>380</y>
       <w>210</w>
-      <h>80</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>InfoProduct
 --
-expiry: date</panel_attributes>
+softdelete, timestampable
+
+expiry: date
+inGarbage: boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>300</x>
-      <y>330</y>
+      <y>310</y>
       <w>50</w>
       <h>90</h>
     </coordinates>
